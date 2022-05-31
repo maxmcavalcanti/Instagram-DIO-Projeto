@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(243, 243, 243);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 60%;
+  height: 100vh;
+}
+
+.container-cellphone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.container-cellphone img {
+  height: 50rem;
+}
+
+.container-login {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 0.5em;
+  flex-direction: column;
+  width: 50%;
+  min-height: 34rem;
+}
+
+.login-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 1.3rem 0;
+  border: 1px solid lightgray;
+  gap: 20px;
+}
+.container-img-logo {
+  margin-top: 20px;
+}
+.container-img-perfil {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.container-img-perfil img {
+  height: 100%;
+  width: 100%;
+}
+.button-login {
+  background-color: #0095f6;
+  color: #ffffff;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #0095f6;
+}
+.login-img a {
+  margin-bottom: 20px;
+}
+.login-accounts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 1.3rem 0;
+  border: 1px solid lightgray;
+}
+
+.login-app {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-store {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.login-download {
+  align-self: center;
+}
+
+.login-app {
+  width: 100%;
+  gap: 1em;
+  margin-top: 10px;
+}
+.store-container {
+  width: 100%;
+  display: flex;
+}
+.store-container img {
+  width: 75%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.link-blue {
+  color: #0095f6;
+}
+
+@media (max-width: 1024px) {
+  .flex-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 650px) {
+  body {
+    background-color: #ffffff;
+  }
+
+  .flex-container {
+    width: 90%;
+  }
+
+  .container-cellphone {
+    display: none;
+  }
+
+  .container-login {
+    width: 100%;
+  }
+
+  .login-img,
+  .login-accounts {
+    border: 1px solid transparent;
+  }
+}
